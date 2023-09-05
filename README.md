@@ -122,7 +122,7 @@ http://localhost:8080
 
 Here's a preview of the Student Performance Indicator in action:
 
-![Student Performance Indicator Screenshot](images/text-summarizer-screenshot.png)
+![Student Performance Indicator Screenshot](https://github.com/SahilChowkekar/Student-Performance-Indicator/blob/master/img/Screenshot.png)
 
 
 
