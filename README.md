@@ -85,7 +85,7 @@ python app.py
 
 7. Open your preferred web browser and visit:
 ```bash
-http://localhost:8080
+http://127.0.0.1:5000
 
 ```
 
