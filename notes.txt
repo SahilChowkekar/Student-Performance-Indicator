@@ -1,0 +1,6 @@
+requirement.txt- all packages needed to install
+setup.py - we can able to make a model and able to deploy the package to pypy
+find_package- to build as a package the init.py should be there under the src
+data_ingestion - read the data from a database or any other source
+data_transformation - where data are transformed (for example - changing categorical features to numerical or using one-hot encoding)
+model_trainer -  where the in this the model is trained 
