@@ -6,7 +6,7 @@ name: Build and deploy container app to Azure Web App - studentperformancecheck
 on:
   push:
     branches:
-      - mastern
+      - master
   workflow_dispatch:
 
 jobs:
@@ -17,20 +17,20 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v2
 
     - name: Log in to registry
-      uses: docker/login-action@v1
+      uses: docker/login-action@v2
       with:
-        registry: https://testdockerkrish.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_7fe4218b75d44acd982fcba49ee541c7 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_d7568033888947cf97273dac9a37d852 }}
+        registry: https://testdockersahil.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_bb0137c09fce4bf0bdfb959afdc167cd }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_89b14d34c7404119a9e1c1f76d89c77b }}
 
     - name: Build and push container image to registry
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v3
       with:
         push: true
-        tags: testdockerkrish.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_7fe4218b75d44acd982fcba49ee541c7 }}/tudentperformance1:${{ github.sha }}
+        tags: testdockersahil.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_bb0137c09fce4bf0bdfb959afdc167cd }}/testdockersahil/studentperformance:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'studentperformancecheck'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1fbf117736ee417e9fb28f9f53c3edad }}
-        images: 'testdockerkrish.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_7fe4218b75d44acd982fcba49ee541c7 }}/tudentperformance1:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5db47773e0c34827ad5f5acbd00a96e2 }}
+        images: 'testdockersahil.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_bb0137c09fce4bf0bdfb959afdc167cd }}/testdockersahil/studentperformance:${{ github.sha }}'
