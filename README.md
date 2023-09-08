@@ -15,7 +15,7 @@
 - [Model Evaluation](#model-evaluation)
 - [Preview of Student Performance Indicator ](#preview-of-student-performance-indicator)
 - [Conclusion](#conclusion)
-- [Microsoft Azure CICD Deployment with GitHub Actions](#microsoft-azure-deployment-with-github-actions)
+- [Microsoft Azure CICD Deployment with GitHub Actions](#microsoft-azure-cicd-deployment-with-github-actions)
 
 
 
