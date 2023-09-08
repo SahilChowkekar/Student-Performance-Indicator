@@ -185,7 +185,7 @@ docker push testdockersahil.azurecr.io/studentperformance:latest
 3. Under the "Actions" tab, you will see the deployment happening.
 3. After the deployment is successful, click on the "Evaluated Environment URL" to access your web app.
 ## Step 10: Accessing Your Web App
--  Alternatively, you can access your web app by going to your Azure Web App in the Azure portal and clicking on the "Browse" or "Default Domain" option.\\
+-  Alternatively, you can access your web app by going to your Azure Web App in the Azure portal and clicking on the "Browse" or "Default Domain" option.\
 
 These guidelines provide a step-by-step approach to deploying your Student Performance Indicator Web App to Azure Web App using Docker and GitHub Actions. Be sure to replace placeholders with your actual Azure and GitHub details. 
 
